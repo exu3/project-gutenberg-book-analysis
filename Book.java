@@ -44,4 +44,8 @@ public class Book {
     public int getNumWords() {
         return numWords;
     }
+
+    public String getLongestWord() {
+        return longestWord;
+    }
 }

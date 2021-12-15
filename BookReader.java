@@ -95,7 +95,7 @@ public class BookReader
                         longestWord = words[a];
                     }
                 }
-                    System.out.println("Longest word: " + longestWord);
+                System.out.println("Longest word: " + longestWord);
                 }
             }
 
