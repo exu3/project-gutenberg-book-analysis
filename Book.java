@@ -1,4 +1,4 @@
-import java.util.ArrayList; 
+import java.util.ArrayList;
 public class Book {
     // constructor
 
@@ -7,15 +7,41 @@ public class Book {
     private String author;
     private String language;
     private int numWords;
+    private String longestWord;
     private int numLines;
+    private String text;
+
+    // default constructor
+    public Book() {
+        title = author = language = text = "";
+        numWords = numLines = 0;
+        // words  = new Arraylist <Word> ();    
+    }
     
 
-    public Book(String title, String author, String language) {
+    public Book(String title, String author, String language, int numLines) {
         this.title = "";
         this.author = "";
         this.language = "";
         numWords = 0;
         this.numLines = 0;
         words = new ArrayList <Word> ();
+    }
+
+    // public methods , getters and setters
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public int getNumLines() {
+        return numLines;
+    }
+
+    public int getNumWords() {
+        return numWords;
     }
 }
