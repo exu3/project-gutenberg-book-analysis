@@ -32,15 +32,20 @@ public class Book {
     public void setTitle(String title) {
         this.title = title;
     }
-
+    
     public String getTitle() {
         return title;
+    }
+
+    public void setNumLines(int numLines) {
+        this.numLines = numLines;
     }
 
     public int getNumLines() {
         return numLines;
     }
 
+    //public void setNumWords
     public int getNumWords() {
         return numWords;
     }
