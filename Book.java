@@ -10,7 +10,7 @@ public class Book {
     private int numLines;
     private int numWords;
     private String text;
-    private ArrayList <String> allWords;
+    // private ArrayList <String> allWords;
 
     // default constructor
     public Book() {
@@ -46,7 +46,7 @@ public class Book {
         return numLines;
     }
 
-    //public void setNumWords
+    // public void setNumWords
     public int getNumWords() {
         return numWords;
     }
@@ -55,9 +55,9 @@ public class Book {
         return longestWord;
     }
     public ArrayList getTotalText() {
-        return allWords;
+        return words;
     }
-    public void setTotalText(ArrayList allWords) {
-        this.allWords = allWords;
+    public void setTotalText(ArrayList words) {
+        this.words = words;
     }
 }
