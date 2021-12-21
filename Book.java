@@ -6,10 +6,11 @@ public class Book {
     private String title;
     private String author;
     private String language;
-    private int numWords;
     private String longestWord;
     private int numLines;
+    private int numWords;
     private String text;
+    private ArrayList <String> allWords;
 
     // default constructor
     public Book() {
@@ -52,5 +53,11 @@ public class Book {
 
     public String getLongestWord() {
         return longestWord;
+    }
+    public ArrayList getTotalText() {
+        return allWords;
+    }
+    public void setTotalText(ArrayList allWords) {
+        this.allWords = allWords;
     }
 }
